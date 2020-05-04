@@ -176,7 +176,7 @@ formatFunction2020 <- function(file){
 
 Mortality2020 <- formatFunction2020(`spreadsheets/weekly/2020Mortality-Weekly figures 2020.csv`)
 
-
+summary(Mortality2020$date)
 # Bind together -----------------------------------------------------------
 # taken from the NHSRdatasets GitHub but will be from the package in due course
 
