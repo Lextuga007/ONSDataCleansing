@@ -24,7 +24,7 @@ download.file(
 
 # Extract all worksheets to individual csv 2020 -------------------------------------------------------------
 
-files_list <- list.files(path = "Working files/Weekly",
+files_list <- list.files(path = "spreadsheets/weekly",
                          pattern = "*.xlsx",
                          full.names = TRUE)
 
@@ -53,7 +53,7 @@ for(j in 1:length(files_list)){
 
 # From 2010 to 2015 the tab name was Weekly Figures then it changed capitisation to Weekly figures
 
-files_list_sheets <- list.files(path = "Working files/Weekly",
+files_list_sheets <- list.files(path = "spreadsheets/weekly",
                                 pattern = "Weekly figures 2020",
                                 full.names = TRUE
 )
@@ -174,10 +174,11 @@ formatFunction2020 <- function(file){
 
 }
 
-Mortality2020 <- formatFunction2020(`Working files/Weekly/2020Mortality-Weekly figures 2020.csv`)
+Mortality2020 <- formatFunction2020(`spreadsheets/weekly/2020Mortality-Weekly figures 2020.csv`)
 
 
 # Bind together -----------------------------------------------------------
+# taken from the NHSRdatasets GitHub but will be from the package in due course
 
 load("data/ons_mortality.rda")
 
@@ -186,8 +187,8 @@ ons_mortality <- do.call("rbind", list(ons_mortality,
 
 # Save as rda file
 
-save(ons_mortality, file = "Working files/ons_mortality_2020.rda")
+save(ons_mortality, file = "data/ons_mortality_2020.rda")
 
 # Save as a csv file
 
-write_csv(ons_mortality, "Working files/ons_mortality_2020.csv")
+write_csv(ons_mortality, "data/ons_mortality_2020.csv")
