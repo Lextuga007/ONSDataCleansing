@@ -3,6 +3,7 @@ library(janitor)
 library(tidyverse)
 library(stringi)
 library(lubridate)
+library(NHSRdatasets)
 
 # Source and licence acknowledgement
 
@@ -180,7 +181,7 @@ summary(Mortality2020$date)
 # Bind together -----------------------------------------------------------
 # taken from the NHSRdatasets GitHub but will be from the package in due course
 
-load("data/ons_mortality.rda")
+ons_mortality <- NHSRdatasets::ons_mortality
 
 ons_mortality <- do.call("rbind", list(ons_mortality,
                                    Mortality2020))
