@@ -18,7 +18,7 @@ library(NHSRdatasets)
 # 2020 Format changed to xlsx from xls
 
 download.file(
-  "https://www.ons.gov.uk/file?uri=%2fpeoplepopulationandcommunity%2fbirthsdeathsandmarriages%2fdeaths%2fdatasets%2fweeklyprovisionalfiguresondeathsregisteredinenglandandwales%2f2020/publishedweek1620201.xlsx",
+  "https://www.ons.gov.uk/file?uri=%2fpeoplepopulationandcommunity%2fbirthsdeathsandmarriages%2fdeaths%2fdatasets%2fweeklyprovisionalfiguresondeathsregisteredinenglandandwales%2f2020/publishedweek182020.xlsx",
   destfile = "2020Mortality.xlsx",
   method = "wininet",
   mode = "wb")
