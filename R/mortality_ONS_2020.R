@@ -122,11 +122,11 @@ formatFunction2020 <- function(file){
     mutate(Categories = case_when(str_detect(Categories, "NA_") ~ str_replace(Categories, "NA_", ""),
                                   str_detect(Categories, "Week ended") ~ "Week ended",
                                   str_detect(Categories, "Week number") ~ "Week number",
+                                  TRUE ~ Categories),
+           Categories = case_when(str_detect(Categories, "week over the previous 5") ~ str_c("Total deaths: average of corresponding", Categories, sep = " "),
                                   TRUE ~ Categories)
     ) %>%
-    filter(!is.na(x3)) %>%
-    mutate(Categories = case_when(str_detect(Categories, "previous 5 years") ~ "average of same week over 5 years",
-                                  TRUE ~ Categories))
+    filter(!is.na(x3)) 
 
   # Push date row to column names
 
@@ -177,7 +177,12 @@ formatFunction2020 <- function(file){
 
 Mortality2020 <- formatFunction2020(`spreadsheets/weekly/2020Mortality-Weekly figures 2020.csv`)
 
+# Checks
+
 summary(Mortality2020$date)
+
+summary(Mortality2020$week_no)
+
 # Bind together -----------------------------------------------------------
 # taken from the NHSRdatasets GitHub but will be from the package in due course
 
