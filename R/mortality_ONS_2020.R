@@ -4,6 +4,8 @@ library(tidyverse)
 library(stringi)
 library(lubridate)
 library(NHSRdatasets)
+library(httr)
+library(rvest)
 
 # Source and licence acknowledgement
 
@@ -12,14 +14,20 @@ library(NHSRdatasets)
 
 #https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/datasets/weeklyprovisionalfiguresondeathsregisteredinenglandandwales
 
-
 # Download data -----------------------------------------------------------
-
 # 2020 Format changed to xlsx from xls
 
+# ext built from gist shared by rcatlord https://gist.github.com/rcatlord/1b44259e23bf8ef76bb54cc14d60d969
+
+ext <- read_html("https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/datasets/weeklyprovisionalfiguresondeathsregisteredinenglandandwales") %>% 
+  html_nodes("a") %>%
+  html_attr("href") %>%
+  str_subset("\\.xlsx") %>% 
+  .[[1]]
+
 download.file(
-  "https://www.ons.gov.uk/file?uri=%2fpeoplepopulationandcommunity%2fbirthsdeathsandmarriages%2fdeaths%2fdatasets%2fweeklyprovisionalfiguresondeathsregisteredinenglandandwales%2f2020/publishedweek202020.xlsx",
-  destfile = "2020Mortality.xlsx",
+  paste0("https://www.ons.gov.uk", ext),
+  destfile = "spreadsheets/weekly/2020Mortality.xlsx",
   method = "wininet",
   mode = "wb")
 
