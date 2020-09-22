@@ -18837,6 +18837,8 @@ Total deaths,all ages,8945,2020-08-07,32
 Total deaths,all ages,9392,2020-08-14,33
 Total deaths,all ages,9631,2020-08-21,34
 Total deaths,all ages,9032,2020-08-28,35
+Total deaths,all ages,7739,2020-09-04,36
+Total deaths,all ages,9811,2020-09-11,37
 Total deaths,average of corresponding week over the previous 5 years 1 (England and Wales),12175,2020-01-03,1
 Total deaths,average of corresponding week over the previous 5 years 1 (England and Wales),13822,2020-01-10,2
 Total deaths,average of corresponding week over the previous 5 years 1 (England and Wales),13216,2020-01-17,3
@@ -18872,6 +18874,8 @@ Total deaths,average of corresponding week over the previous 5 years 1 (England 
 Total deaths,average of corresponding week over the previous 5 years 1 (England and Wales),9085,2020-08-14,33
 Total deaths,average of corresponding week over the previous 5 years 1 (England and Wales),9157,2020-08-21,34
 Total deaths,average of corresponding week over the previous 5 years 1 (England and Wales),8241,2020-08-28,35
+Total deaths,average of corresponding week over the previous 5 years 1 (England and Wales),9182,2020-09-04,36
+Total deaths,average of corresponding week over the previous 5 years 1 (England and Wales),9306,2020-09-11,37
 Total deaths,average of corresponding week over the previous 5 years 1 (England),11412,2020-01-03,1
 Total deaths,average of corresponding week over the previous 5 years 1 (England),12933,2020-01-10,2
 Total deaths,average of corresponding week over the previous 5 years 1 (England),12370,2020-01-17,3
@@ -18907,6 +18911,8 @@ Total deaths,average of corresponding week over the previous 5 years 1 (England)
 Total deaths,average of corresponding week over the previous 5 years 1 (England),8494,2020-08-14,33
 Total deaths,average of corresponding week over the previous 5 years 1 (England),8560,2020-08-21,34
 Total deaths,average of corresponding week over the previous 5 years 1 (England),7674,2020-08-28,35
+Total deaths,average of corresponding week over the previous 5 years 1 (England),8604,2020-09-04,36
+Total deaths,average of corresponding week over the previous 5 years 1 (England),8708,2020-09-11,37
 Total deaths,average of corresponding week over the previous 5 years 1 (Wales),756,2020-01-03,1
 Total deaths,average of corresponding week over the previous 5 years 1 (Wales),856,2020-01-10,2
 Total deaths,average of corresponding week over the previous 5 years 1 (Wales),812,2020-01-17,3
@@ -18942,6 +18948,8 @@ Total deaths,average of corresponding week over the previous 5 years 1 (Wales),5
 Total deaths,average of corresponding week over the previous 5 years 1 (Wales),564,2020-08-14,33
 Total deaths,average of corresponding week over the previous 5 years 1 (Wales),573,2020-08-21,34
 Total deaths,average of corresponding week over the previous 5 years 1 (Wales),539,2020-08-28,35
+Total deaths,average of corresponding week over the previous 5 years 1 (Wales),552,2020-09-04,36
+Total deaths,average of corresponding week over the previous 5 years 1 (Wales),577,2020-09-11,37
 All respiratory diseases (ICD-10 J00-J99) ICD-10,NA,2140,2020-01-03,1
 All respiratory diseases (ICD-10 J00-J99) ICD-10,NA,2477,2020-01-10,2
 All respiratory diseases (ICD-10 J00-J99) ICD-10,NA,2189,2020-01-17,3
@@ -18959,7 +18967,7 @@ All respiratory diseases (ICD-10 J00-J99) ICD-10,NA,1968,2020-04-03,14
 All respiratory diseases (ICD-10 J00-J99) ICD-10,NA,1776,2020-04-10,15
 All respiratory diseases (ICD-10 J00-J99) ICD-10,NA,1794,2020-04-17,16
 All respiratory diseases (ICD-10 J00-J99) ICD-10,NA,1596,2020-04-24,17
-All respiratory diseases (ICD-10 J00-J99) ICD-10,NA,1293,2020-05-01,18
+All respiratory diseases (ICD-10 J00-J99) ICD-10,NA,1292,2020-05-01,18
 All respiratory diseases (ICD-10 J00-J99) ICD-10,NA,948,2020-05-08,19
 All respiratory diseases (ICD-10 J00-J99) ICD-10,NA,1166,2020-05-15,20
 All respiratory diseases (ICD-10 J00-J99) ICD-10,NA,979,2020-05-22,21
@@ -18972,11 +18980,13 @@ All respiratory diseases (ICD-10 J00-J99) ICD-10,NA,863,2020-07-03,27
 All respiratory diseases (ICD-10 J00-J99) ICD-10,NA,815,2020-07-10,28
 All respiratory diseases (ICD-10 J00-J99) ICD-10,NA,746,2020-07-17,29
 All respiratory diseases (ICD-10 J00-J99) ICD-10,NA,824,2020-07-24,30
-All respiratory diseases (ICD-10 J00-J99) ICD-10,NA,788,2020-07-31,31
-All respiratory diseases (ICD-10 J00-J99) ICD-10,NA,800,2020-08-07,32
-All respiratory diseases (ICD-10 J00-J99) ICD-10,NA,853,2020-08-14,33
-All respiratory diseases (ICD-10 J00-J99) ICD-10,NA,944,2020-08-21,34
-All respiratory diseases (ICD-10 J00-J99) ICD-10,NA,795,2020-08-28,35
+All respiratory diseases (ICD-10 J00-J99) ICD-10,NA,791,2020-07-31,31
+All respiratory diseases (ICD-10 J00-J99) ICD-10,NA,808,2020-08-07,32
+All respiratory diseases (ICD-10 J00-J99) ICD-10,NA,861,2020-08-14,33
+All respiratory diseases (ICD-10 J00-J99) ICD-10,NA,950,2020-08-21,34
+All respiratory diseases (ICD-10 J00-J99) ICD-10,NA,797,2020-08-28,35
+All respiratory diseases (ICD-10 J00-J99) ICD-10,NA,694,2020-09-04,36
+All respiratory diseases (ICD-10 J00-J99) ICD-10,NA,893,2020-09-11,37
 Deaths where COVID-19 was mentioned on the death certificate (ICD-10 U07.1 and U07.2),NA,0,2020-01-03,1
 Deaths where COVID-19 was mentioned on the death certificate (ICD-10 U07.1 and U07.2),NA,0,2020-01-10,2
 Deaths where COVID-19 was mentioned on the death certificate (ICD-10 U07.1 and U07.2),NA,0,2020-01-17,3
@@ -19012,6 +19022,8 @@ Deaths where COVID-19 was mentioned on the death certificate (ICD-10 U07.1 and U
 Deaths where COVID-19 was mentioned on the death certificate (ICD-10 U07.1 and U07.2),NA,139,2020-08-14,33
 Deaths where COVID-19 was mentioned on the death certificate (ICD-10 U07.1 and U07.2),NA,138,2020-08-21,34
 Deaths where COVID-19 was mentioned on the death certificate (ICD-10 U07.1 and U07.2),NA,101,2020-08-28,35
+Deaths where COVID-19 was mentioned on the death certificate (ICD-10 U07.1 and U07.2),NA,78,2020-09-04,36
+Deaths where COVID-19 was mentioned on the death certificate (ICD-10 U07.1 and U07.2),NA,99,2020-09-11,37
 Persons,Under 1 year,48,2020-01-03,1
 Persons,Under 1 year,50,2020-01-10,2
 Persons,Under 1 year,69,2020-01-17,3
@@ -19047,6 +19059,8 @@ Persons,Under 1 year,44,2020-08-07,32
 Persons,Under 1 year,50,2020-08-14,33
 Persons,Under 1 year,49,2020-08-21,34
 Persons,Under 1 year,38,2020-08-28,35
+Persons,Under 1 year,29,2020-09-04,36
+Persons,Under 1 year,39,2020-09-11,37
 Persons,1-4,8,2020-01-03,1
 Persons,1-4,9,2020-01-10,2
 Persons,1-4,7,2020-01-17,3
@@ -19082,6 +19096,8 @@ Persons,1-4,4,2020-08-07,32
 Persons,1-4,5,2020-08-14,33
 Persons,1-4,7,2020-08-21,34
 Persons,1-4,5,2020-08-28,35
+Persons,1-4,3,2020-09-04,36
+Persons,1-4,6,2020-09-11,37
 Persons,5-9,4,2020-01-03,1
 Persons,5-9,8,2020-01-10,2
 Persons,5-9,5,2020-01-17,3
@@ -19117,6 +19133,8 @@ Persons,5-9,5,2020-08-07,32
 Persons,5-9,2,2020-08-14,33
 Persons,5-9,4,2020-08-21,34
 Persons,5-9,7,2020-08-28,35
+Persons,5-9,2,2020-09-04,36
+Persons,5-9,5,2020-09-11,37
 Persons,10-14,4,2020-01-03,1
 Persons,10-14,9,2020-01-10,2
 Persons,10-14,4,2020-01-17,3
@@ -19152,6 +19170,8 @@ Persons,10-14,6,2020-08-07,32
 Persons,10-14,8,2020-08-14,33
 Persons,10-14,5,2020-08-21,34
 Persons,10-14,6,2020-08-28,35
+Persons,10-14,5,2020-09-04,36
+Persons,10-14,3,2020-09-11,37
 Persons,15-19,6,2020-01-03,1
 Persons,15-19,16,2020-01-10,2
 Persons,15-19,10,2020-01-17,3
@@ -19187,6 +19207,8 @@ Persons,15-19,13,2020-08-07,32
 Persons,15-19,12,2020-08-14,33
 Persons,15-19,14,2020-08-21,34
 Persons,15-19,14,2020-08-28,35
+Persons,15-19,7,2020-09-04,36
+Persons,15-19,15,2020-09-11,37
 Persons,20-24,11,2020-01-03,1
 Persons,20-24,23,2020-01-10,2
 Persons,20-24,25,2020-01-17,3
@@ -19222,6 +19244,8 @@ Persons,20-24,27,2020-08-07,32
 Persons,20-24,24,2020-08-14,33
 Persons,20-24,27,2020-08-21,34
 Persons,20-24,22,2020-08-28,35
+Persons,20-24,21,2020-09-04,36
+Persons,20-24,27,2020-09-11,37
 Persons,25-29,17,2020-01-03,1
 Persons,25-29,37,2020-01-10,2
 Persons,25-29,37,2020-01-17,3
@@ -19257,6 +19281,8 @@ Persons,25-29,50,2020-08-07,32
 Persons,25-29,32,2020-08-14,33
 Persons,25-29,28,2020-08-21,34
 Persons,25-29,35,2020-08-28,35
+Persons,25-29,26,2020-09-04,36
+Persons,25-29,35,2020-09-11,37
 Persons,30-34,32,2020-01-03,1
 Persons,30-34,46,2020-01-10,2
 Persons,30-34,47,2020-01-17,3
@@ -19292,6 +19318,8 @@ Persons,30-34,71,2020-08-07,32
 Persons,30-34,49,2020-08-14,33
 Persons,30-34,42,2020-08-21,34
 Persons,30-34,50,2020-08-28,35
+Persons,30-34,35,2020-09-04,36
+Persons,30-34,53,2020-09-11,37
 Persons,35-39,54,2020-01-03,1
 Persons,35-39,68,2020-01-10,2
 Persons,35-39,77,2020-01-17,3
@@ -19327,6 +19355,8 @@ Persons,35-39,68,2020-08-07,32
 Persons,35-39,67,2020-08-14,33
 Persons,35-39,80,2020-08-21,34
 Persons,35-39,67,2020-08-28,35
+Persons,35-39,66,2020-09-04,36
+Persons,35-39,78,2020-09-11,37
 Persons,40-44,69,2020-01-03,1
 Persons,40-44,85,2020-01-10,2
 Persons,40-44,118,2020-01-17,3
@@ -19362,6 +19392,8 @@ Persons,40-44,100,2020-08-07,32
 Persons,40-44,105,2020-08-14,33
 Persons,40-44,104,2020-08-21,34
 Persons,40-44,83,2020-08-28,35
+Persons,40-44,87,2020-09-04,36
+Persons,40-44,95,2020-09-11,37
 Persons,45-49,115,2020-01-03,1
 Persons,45-49,191,2020-01-10,2
 Persons,45-49,189,2020-01-17,3
@@ -19397,6 +19429,8 @@ Persons,45-49,161,2020-08-07,32
 Persons,45-49,153,2020-08-14,33
 Persons,45-49,147,2020-08-21,34
 Persons,45-49,155,2020-08-28,35
+Persons,45-49,137,2020-09-04,36
+Persons,45-49,136,2020-09-11,37
 Persons,50-54,239,2020-01-03,1
 Persons,50-54,279,2020-01-10,2
 Persons,50-54,306,2020-01-17,3
@@ -19432,6 +19466,8 @@ Persons,50-54,239,2020-08-07,32
 Persons,50-54,235,2020-08-14,33
 Persons,50-54,260,2020-08-21,34
 Persons,50-54,249,2020-08-28,35
+Persons,50-54,221,2020-09-04,36
+Persons,50-54,243,2020-09-11,37
 Persons,55-59,361,2020-01-03,1
 Persons,55-59,426,2020-01-10,2
 Persons,55-59,461,2020-01-17,3
@@ -19467,6 +19503,8 @@ Persons,55-59,339,2020-08-07,32
 Persons,55-59,311,2020-08-14,33
 Persons,55-59,374,2020-08-21,34
 Persons,55-59,352,2020-08-28,35
+Persons,55-59,320,2020-09-04,36
+Persons,55-59,377,2020-09-11,37
 Persons,60-64,486,2020-01-03,1
 Persons,60-64,604,2020-01-10,2
 Persons,60-64,562,2020-01-17,3
@@ -19502,6 +19540,8 @@ Persons,60-64,440,2020-08-07,32
 Persons,60-64,451,2020-08-14,33
 Persons,60-64,470,2020-08-21,34
 Persons,60-64,480,2020-08-28,35
+Persons,60-64,343,2020-09-04,36
+Persons,60-64,453,2020-09-11,37
 Persons,65-69,696,2020-01-03,1
 Persons,65-69,857,2020-01-10,2
 Persons,65-69,803,2020-01-17,3
@@ -19537,6 +19577,8 @@ Persons,65-69,575,2020-08-07,32
 Persons,65-69,646,2020-08-14,33
 Persons,65-69,600,2020-08-21,34
 Persons,65-69,626,2020-08-28,35
+Persons,65-69,531,2020-09-04,36
+Persons,65-69,671,2020-09-11,37
 Persons,70-74,1164,2020-01-03,1
 Persons,70-74,1341,2020-01-10,2
 Persons,70-74,1210,2020-01-17,3
@@ -19572,6 +19614,8 @@ Persons,70-74,906,2020-08-07,32
 Persons,70-74,955,2020-08-14,33
 Persons,70-74,970,2020-08-21,34
 Persons,70-74,948,2020-08-28,35
+Persons,70-74,846,2020-09-04,36
+Persons,70-74,1054,2020-09-11,37
 Persons,75-79,1535,2020-01-03,1
 Persons,75-79,1724,2020-01-10,2
 Persons,75-79,1612,2020-01-17,3
@@ -19607,6 +19651,8 @@ Persons,75-79,1124,2020-08-07,32
 Persons,75-79,1182,2020-08-14,33
 Persons,75-79,1275,2020-08-21,34
 Persons,75-79,1129,2020-08-28,35
+Persons,75-79,965,2020-09-04,36
+Persons,75-79,1212,2020-09-11,37
 Persons,80-84,2049,2020-01-03,1
 Persons,80-84,2290,2020-01-10,2
 Persons,80-84,2103,2020-01-17,3
@@ -19642,6 +19688,8 @@ Persons,80-84,1426,2020-08-07,32
 Persons,80-84,1532,2020-08-14,33
 Persons,80-84,1548,2020-08-21,34
 Persons,80-84,1467,2020-08-28,35
+Persons,80-84,1268,2020-09-04,36
+Persons,80-84,1577,2020-09-11,37
 Persons,85-89,2457,2020-01-03,1
 Persons,85-89,2697,2020-01-10,2
 Persons,85-89,2421,2020-01-17,3
@@ -19677,6 +19725,8 @@ Persons,85-89,1528,2020-08-07,32
 Persons,85-89,1587,2020-08-14,33
 Persons,85-89,1628,2020-08-21,34
 Persons,85-89,1521,2020-08-28,35
+Persons,85-89,1289,2020-09-04,36
+Persons,85-89,1657,2020-09-11,37
 Persons,90+,2898,2020-01-03,1
 Persons,90+,3297,2020-01-10,2
 Persons,90+,2924,2020-01-17,3
@@ -19712,6 +19762,8 @@ Persons,90+,1819,2020-08-07,32
 Persons,90+,1986,2020-08-14,33
 Persons,90+,1999,2020-08-21,34
 Persons,90+,1778,2020-08-28,35
+Persons,90+,1538,2020-09-04,36
+Persons,90+,2075,2020-09-11,37
 Males,Under 1 year,30,2020-01-03,1
 Males,Under 1 year,29,2020-01-10,2
 Males,Under 1 year,38,2020-01-17,3
@@ -19747,6 +19799,8 @@ Males,Under 1 year,22,2020-08-07,32
 Males,Under 1 year,26,2020-08-14,33
 Males,Under 1 year,36,2020-08-21,34
 Males,Under 1 year,23,2020-08-28,35
+Males,Under 1 year,19,2020-09-04,36
+Males,Under 1 year,19,2020-09-11,37
 Males,1-4,5,2020-01-03,1
 Males,1-4,4,2020-01-10,2
 Males,1-4,4,2020-01-17,3
@@ -19782,6 +19836,8 @@ Males,1-4,1,2020-08-07,32
 Males,1-4,4,2020-08-14,33
 Males,1-4,2,2020-08-21,34
 Males,1-4,3,2020-08-28,35
+Males,1-4,2,2020-09-04,36
+Males,1-4,2,2020-09-11,37
 Males,5-9,2,2020-01-03,1
 Males,5-9,4,2020-01-10,2
 Males,5-9,4,2020-01-17,3
@@ -19817,6 +19873,8 @@ Males,5-9,2,2020-08-07,32
 Males,5-9,2,2020-08-14,33
 Males,5-9,1,2020-08-21,34
 Males,5-9,2,2020-08-28,35
+Males,5-9,0,2020-09-04,36
+Males,5-9,5,2020-09-11,37
 Males,10-14,1,2020-01-03,1
 Males,10-14,7,2020-01-10,2
 Males,10-14,3,2020-01-17,3
@@ -19852,6 +19910,8 @@ Males,10-14,3,2020-08-07,32
 Males,10-14,6,2020-08-14,33
 Males,10-14,3,2020-08-21,34
 Males,10-14,3,2020-08-28,35
+Males,10-14,5,2020-09-04,36
+Males,10-14,2,2020-09-11,37
 Males,15-19,5,2020-01-03,1
 Males,15-19,8,2020-01-10,2
 Males,15-19,5,2020-01-17,3
@@ -19887,6 +19947,8 @@ Males,15-19,11,2020-08-07,32
 Males,15-19,9,2020-08-14,33
 Males,15-19,9,2020-08-21,34
 Males,15-19,9,2020-08-28,35
+Males,15-19,1,2020-09-04,36
+Males,15-19,8,2020-09-11,37
 Males,20-24,7,2020-01-03,1
 Males,20-24,14,2020-01-10,2
 Males,20-24,21,2020-01-17,3
@@ -19922,6 +19984,8 @@ Males,20-24,16,2020-08-07,32
 Males,20-24,20,2020-08-14,33
 Males,20-24,21,2020-08-21,34
 Males,20-24,14,2020-08-28,35
+Males,20-24,18,2020-09-04,36
+Males,20-24,18,2020-09-11,37
 Males,25-29,7,2020-01-03,1
 Males,25-29,28,2020-01-10,2
 Males,25-29,31,2020-01-17,3
@@ -19957,6 +20021,8 @@ Males,25-29,35,2020-08-07,32
 Males,25-29,20,2020-08-14,33
 Males,25-29,18,2020-08-21,34
 Males,25-29,24,2020-08-28,35
+Males,25-29,20,2020-09-04,36
+Males,25-29,26,2020-09-11,37
 Males,30-34,21,2020-01-03,1
 Males,30-34,28,2020-01-10,2
 Males,30-34,29,2020-01-17,3
@@ -19992,6 +20058,8 @@ Males,30-34,43,2020-08-07,32
 Males,30-34,29,2020-08-14,33
 Males,30-34,29,2020-08-21,34
 Males,30-34,38,2020-08-28,35
+Males,30-34,24,2020-09-04,36
+Males,30-34,33,2020-09-11,37
 Males,35-39,32,2020-01-03,1
 Males,35-39,46,2020-01-10,2
 Males,35-39,49,2020-01-17,3
@@ -20027,6 +20095,8 @@ Males,35-39,40,2020-08-07,32
 Males,35-39,38,2020-08-14,33
 Males,35-39,52,2020-08-21,34
 Males,35-39,40,2020-08-28,35
+Males,35-39,38,2020-09-04,36
+Males,35-39,48,2020-09-11,37
 Males,40-44,43,2020-01-03,1
 Males,40-44,52,2020-01-10,2
 Males,40-44,72,2020-01-17,3
@@ -20062,6 +20132,8 @@ Males,40-44,64,2020-08-07,32
 Males,40-44,60,2020-08-14,33
 Males,40-44,70,2020-08-21,34
 Males,40-44,59,2020-08-28,35
+Males,40-44,46,2020-09-04,36
+Males,40-44,67,2020-09-11,37
 Males,45-49,62,2020-01-03,1
 Males,45-49,114,2020-01-10,2
 Males,45-49,106,2020-01-17,3
@@ -20097,6 +20169,8 @@ Males,45-49,101,2020-08-07,32
 Males,45-49,88,2020-08-14,33
 Males,45-49,87,2020-08-21,34
 Males,45-49,103,2020-08-28,35
+Males,45-49,88,2020-09-04,36
+Males,45-49,87,2020-09-11,37
 Males,50-54,137,2020-01-03,1
 Males,50-54,156,2020-01-10,2
 Males,50-54,200,2020-01-17,3
@@ -20132,6 +20206,8 @@ Males,50-54,151,2020-08-07,32
 Males,50-54,140,2020-08-14,33
 Males,50-54,164,2020-08-21,34
 Males,50-54,162,2020-08-28,35
+Males,50-54,134,2020-09-04,36
+Males,50-54,155,2020-09-11,37
 Males,55-59,191,2020-01-03,1
 Males,55-59,259,2020-01-10,2
 Males,55-59,295,2020-01-17,3
@@ -20167,6 +20243,8 @@ Males,55-59,208,2020-08-07,32
 Males,55-59,185,2020-08-14,33
 Males,55-59,210,2020-08-21,34
 Males,55-59,219,2020-08-28,35
+Males,55-59,170,2020-09-04,36
+Males,55-59,240,2020-09-11,37
 Males,60-64,275,2020-01-03,1
 Males,60-64,355,2020-01-10,2
 Males,60-64,338,2020-01-17,3
@@ -20202,6 +20280,8 @@ Males,60-64,251,2020-08-07,32
 Males,60-64,254,2020-08-14,33
 Males,60-64,284,2020-08-21,34
 Males,60-64,291,2020-08-28,35
+Males,60-64,196,2020-09-04,36
+Males,60-64,286,2020-09-11,37
 Males,65-69,415,2020-01-03,1
 Males,65-69,509,2020-01-10,2
 Males,65-69,471,2020-01-17,3
@@ -20237,6 +20317,8 @@ Males,65-69,352,2020-08-07,32
 Males,65-69,387,2020-08-14,33
 Males,65-69,354,2020-08-21,34
 Males,65-69,365,2020-08-28,35
+Males,65-69,308,2020-09-04,36
+Males,65-69,408,2020-09-11,37
 Males,70-74,697,2020-01-03,1
 Males,70-74,761,2020-01-10,2
 Males,70-74,690,2020-01-17,3
@@ -20272,6 +20354,8 @@ Males,70-74,537,2020-08-07,32
 Males,70-74,558,2020-08-14,33
 Males,70-74,544,2020-08-21,34
 Males,70-74,554,2020-08-28,35
+Males,70-74,496,2020-09-04,36
+Males,70-74,584,2020-09-11,37
 Males,75-79,826,2020-01-03,1
 Males,75-79,924,2020-01-10,2
 Males,75-79,886,2020-01-17,3
@@ -20307,6 +20391,8 @@ Males,75-79,621,2020-08-07,32
 Males,75-79,683,2020-08-14,33
 Males,75-79,713,2020-08-21,34
 Males,75-79,614,2020-08-28,35
+Males,75-79,540,2020-09-04,36
+Males,75-79,647,2020-09-11,37
 Males,80-84,1053,2020-01-03,1
 Males,80-84,1172,2020-01-10,2
 Males,80-84,1080,2020-01-17,3
@@ -20342,6 +20428,8 @@ Males,80-84,732,2020-08-07,32
 Males,80-84,812,2020-08-14,33
 Males,80-84,817,2020-08-21,34
 Males,80-84,728,2020-08-28,35
+Males,80-84,654,2020-09-04,36
+Males,80-84,821,2020-09-11,37
 Males,85-89,1098,2020-01-03,1
 Males,85-89,1231,2020-01-10,2
 Males,85-89,1117,2020-01-17,3
@@ -20377,6 +20465,8 @@ Males,85-89,683,2020-08-07,32
 Males,85-89,751,2020-08-14,33
 Males,85-89,751,2020-08-21,34
 Males,85-89,713,2020-08-28,35
+Males,85-89,598,2020-09-04,36
+Males,85-89,806,2020-09-11,37
 Males,90+,982,2020-01-03,1
 Males,90+,1127,2020-01-10,2
 Males,90+,991,2020-01-17,3
@@ -20412,6 +20502,8 @@ Males,90+,646,2020-08-07,32
 Males,90+,685,2020-08-14,33
 Males,90+,654,2020-08-21,34
 Males,90+,612,2020-08-28,35
+Males,90+,568,2020-09-04,36
+Males,90+,756,2020-09-11,37
 Females,Under 1 year,18,2020-01-03,1
 Females,Under 1 year,21,2020-01-10,2
 Females,Under 1 year,31,2020-01-17,3
@@ -20447,6 +20539,8 @@ Females,Under 1 year,22,2020-08-07,32
 Females,Under 1 year,24,2020-08-14,33
 Females,Under 1 year,13,2020-08-21,34
 Females,Under 1 year,15,2020-08-28,35
+Females,Under 1 year,10,2020-09-04,36
+Females,Under 1 year,20,2020-09-11,37
 Females,1-4,3,2020-01-03,1
 Females,1-4,5,2020-01-10,2
 Females,1-4,3,2020-01-17,3
@@ -20482,6 +20576,8 @@ Females,1-4,3,2020-08-07,32
 Females,1-4,1,2020-08-14,33
 Females,1-4,5,2020-08-21,34
 Females,1-4,2,2020-08-28,35
+Females,1-4,1,2020-09-04,36
+Females,1-4,4,2020-09-11,37
 Females,5-9,2,2020-01-03,1
 Females,5-9,4,2020-01-10,2
 Females,5-9,1,2020-01-17,3
@@ -20517,6 +20613,8 @@ Females,5-9,3,2020-08-07,32
 Females,5-9,0,2020-08-14,33
 Females,5-9,3,2020-08-21,34
 Females,5-9,5,2020-08-28,35
+Females,5-9,2,2020-09-04,36
+Females,5-9,0,2020-09-11,37
 Females,10-14,3,2020-01-03,1
 Females,10-14,2,2020-01-10,2
 Females,10-14,1,2020-01-17,3
@@ -20552,6 +20650,8 @@ Females,10-14,3,2020-08-07,32
 Females,10-14,2,2020-08-14,33
 Females,10-14,2,2020-08-21,34
 Females,10-14,3,2020-08-28,35
+Females,10-14,0,2020-09-04,36
+Females,10-14,1,2020-09-11,37
 Females,15-19,1,2020-01-03,1
 Females,15-19,8,2020-01-10,2
 Females,15-19,5,2020-01-17,3
@@ -20587,6 +20687,8 @@ Females,15-19,2,2020-08-07,32
 Females,15-19,3,2020-08-14,33
 Females,15-19,5,2020-08-21,34
 Females,15-19,5,2020-08-28,35
+Females,15-19,6,2020-09-04,36
+Females,15-19,7,2020-09-11,37
 Females,20-24,4,2020-01-03,1
 Females,20-24,9,2020-01-10,2
 Females,20-24,4,2020-01-17,3
@@ -20622,6 +20724,8 @@ Females,20-24,11,2020-08-07,32
 Females,20-24,4,2020-08-14,33
 Females,20-24,6,2020-08-21,34
 Females,20-24,8,2020-08-28,35
+Females,20-24,3,2020-09-04,36
+Females,20-24,9,2020-09-11,37
 Females,25-29,10,2020-01-03,1
 Females,25-29,9,2020-01-10,2
 Females,25-29,6,2020-01-17,3
@@ -20657,6 +20761,8 @@ Females,25-29,15,2020-08-07,32
 Females,25-29,12,2020-08-14,33
 Females,25-29,10,2020-08-21,34
 Females,25-29,11,2020-08-28,35
+Females,25-29,6,2020-09-04,36
+Females,25-29,9,2020-09-11,37
 Females,30-34,11,2020-01-03,1
 Females,30-34,18,2020-01-10,2
 Females,30-34,18,2020-01-17,3
@@ -20692,6 +20798,8 @@ Females,30-34,28,2020-08-07,32
 Females,30-34,20,2020-08-14,33
 Females,30-34,13,2020-08-21,34
 Females,30-34,12,2020-08-28,35
+Females,30-34,11,2020-09-04,36
+Females,30-34,20,2020-09-11,37
 Females,35-39,22,2020-01-03,1
 Females,35-39,22,2020-01-10,2
 Females,35-39,28,2020-01-17,3
@@ -20727,6 +20835,8 @@ Females,35-39,28,2020-08-07,32
 Females,35-39,29,2020-08-14,33
 Females,35-39,28,2020-08-21,34
 Females,35-39,27,2020-08-28,35
+Females,35-39,28,2020-09-04,36
+Females,35-39,30,2020-09-11,37
 Females,40-44,26,2020-01-03,1
 Females,40-44,33,2020-01-10,2
 Females,40-44,46,2020-01-17,3
@@ -20762,6 +20872,8 @@ Females,40-44,36,2020-08-07,32
 Females,40-44,45,2020-08-14,33
 Females,40-44,34,2020-08-21,34
 Females,40-44,24,2020-08-28,35
+Females,40-44,41,2020-09-04,36
+Females,40-44,28,2020-09-11,37
 Females,45-49,53,2020-01-03,1
 Females,45-49,77,2020-01-10,2
 Females,45-49,83,2020-01-17,3
@@ -20797,6 +20909,8 @@ Females,45-49,60,2020-08-07,32
 Females,45-49,65,2020-08-14,33
 Females,45-49,60,2020-08-21,34
 Females,45-49,52,2020-08-28,35
+Females,45-49,49,2020-09-04,36
+Females,45-49,49,2020-09-11,37
 Females,50-54,102,2020-01-03,1
 Females,50-54,123,2020-01-10,2
 Females,50-54,106,2020-01-17,3
@@ -20832,6 +20946,8 @@ Females,50-54,88,2020-08-07,32
 Females,50-54,95,2020-08-14,33
 Females,50-54,96,2020-08-21,34
 Females,50-54,87,2020-08-28,35
+Females,50-54,87,2020-09-04,36
+Females,50-54,88,2020-09-11,37
 Females,55-59,170,2020-01-03,1
 Females,55-59,167,2020-01-10,2
 Females,55-59,166,2020-01-17,3
@@ -20867,6 +20983,8 @@ Females,55-59,131,2020-08-07,32
 Females,55-59,126,2020-08-14,33
 Females,55-59,164,2020-08-21,34
 Females,55-59,133,2020-08-28,35
+Females,55-59,150,2020-09-04,36
+Females,55-59,137,2020-09-11,37
 Females,60-64,211,2020-01-03,1
 Females,60-64,249,2020-01-10,2
 Females,60-64,224,2020-01-17,3
@@ -20902,6 +21020,8 @@ Females,60-64,189,2020-08-07,32
 Females,60-64,197,2020-08-14,33
 Females,60-64,186,2020-08-21,34
 Females,60-64,189,2020-08-28,35
+Females,60-64,147,2020-09-04,36
+Females,60-64,167,2020-09-11,37
 Females,65-69,281,2020-01-03,1
 Females,65-69,348,2020-01-10,2
 Females,65-69,332,2020-01-17,3
@@ -20937,6 +21057,8 @@ Females,65-69,223,2020-08-07,32
 Females,65-69,259,2020-08-14,33
 Females,65-69,246,2020-08-21,34
 Females,65-69,261,2020-08-28,35
+Females,65-69,223,2020-09-04,36
+Females,65-69,263,2020-09-11,37
 Females,70-74,467,2020-01-03,1
 Females,70-74,580,2020-01-10,2
 Females,70-74,520,2020-01-17,3
@@ -20972,6 +21094,8 @@ Females,70-74,369,2020-08-07,32
 Females,70-74,397,2020-08-14,33
 Females,70-74,426,2020-08-21,34
 Females,70-74,394,2020-08-28,35
+Females,70-74,350,2020-09-04,36
+Females,70-74,470,2020-09-11,37
 Females,75-79,709,2020-01-03,1
 Females,75-79,800,2020-01-10,2
 Females,75-79,726,2020-01-17,3
@@ -21007,6 +21131,8 @@ Females,75-79,503,2020-08-07,32
 Females,75-79,499,2020-08-14,33
 Females,75-79,562,2020-08-21,34
 Females,75-79,515,2020-08-28,35
+Females,75-79,425,2020-09-04,36
+Females,75-79,565,2020-09-11,37
 Females,80-84,996,2020-01-03,1
 Females,80-84,1118,2020-01-10,2
 Females,80-84,1023,2020-01-17,3
@@ -21042,6 +21168,8 @@ Females,80-84,694,2020-08-07,32
 Females,80-84,720,2020-08-14,33
 Females,80-84,731,2020-08-21,34
 Females,80-84,739,2020-08-28,35
+Females,80-84,614,2020-09-04,36
+Females,80-84,756,2020-09-11,37
 Females,85-89,1359,2020-01-03,1
 Females,85-89,1466,2020-01-10,2
 Females,85-89,1304,2020-01-17,3
@@ -21077,6 +21205,8 @@ Females,85-89,845,2020-08-07,32
 Females,85-89,836,2020-08-14,33
 Females,85-89,877,2020-08-21,34
 Females,85-89,808,2020-08-28,35
+Females,85-89,691,2020-09-04,36
+Females,85-89,851,2020-09-11,37
 Females,90+,1916,2020-01-03,1
 Females,90+,2170,2020-01-10,2
 Females,90+,1933,2020-01-17,3
@@ -21112,6 +21242,8 @@ Females,90+,1173,2020-08-07,32
 Females,90+,1301,2020-08-14,33
 Females,90+,1345,2020-08-21,34
 Females,90+,1166,2020-08-28,35
+Females,90+,970,2020-09-04,36
+Females,90+,1319,2020-09-11,37
 Region,North East,673,2020-01-03,1
 Region,North East,707,2020-01-10,2
 Region,North East,647,2020-01-17,3
@@ -21147,6 +21279,8 @@ Region,North East,486,2020-08-07,32
 Region,North East,520,2020-08-14,33
 Region,North East,479,2020-08-21,34
 Region,North East,455,2020-08-28,35
+Region,North East,431,2020-09-04,36
+Region,North East,502,2020-09-11,37
 Region,North West,1806,2020-01-03,1
 Region,North West,1932,2020-01-10,2
 Region,North West,1696,2020-01-17,3
@@ -21182,6 +21316,8 @@ Region,North West,1211,2020-08-07,32
 Region,North West,1304,2020-08-14,33
 Region,North West,1269,2020-08-21,34
 Region,North West,1148,2020-08-28,35
+Region,North West,1057,2020-09-04,36
+Region,North West,1229,2020-09-11,37
 Region,Yorkshire and The Humber,1240,2020-01-03,1
 Region,Yorkshire and The Humber,1339,2020-01-10,2
 Region,Yorkshire and The Humber,1278,2020-01-17,3
@@ -21217,6 +21353,8 @@ Region,Yorkshire and The Humber,851,2020-08-07,32
 Region,Yorkshire and The Humber,853,2020-08-14,33
 Region,Yorkshire and The Humber,870,2020-08-21,34
 Region,Yorkshire and The Humber,922,2020-08-28,35
+Region,Yorkshire and The Humber,780,2020-09-04,36
+Region,Yorkshire and The Humber,952,2020-09-11,37
 Region,East Midlands,1060,2020-01-03,1
 Region,East Midlands,1195,2020-01-10,2
 Region,East Midlands,1106,2020-01-17,3
@@ -21252,6 +21390,8 @@ Region,East Midlands,798,2020-08-07,32
 Region,East Midlands,829,2020-08-14,33
 Region,East Midlands,780,2020-08-21,34
 Region,East Midlands,724,2020-08-28,35
+Region,East Midlands,640,2020-09-04,36
+Region,East Midlands,867,2020-09-11,37
 Region,West Midlands,1349,2020-01-03,1
 Region,West Midlands,1450,2020-01-10,2
 Region,West Midlands,1407,2020-01-17,3
@@ -21287,6 +21427,8 @@ Region,West Midlands,933,2020-08-07,32
 Region,West Midlands,923,2020-08-14,33
 Region,West Midlands,1028,2020-08-21,34
 Region,West Midlands,945,2020-08-28,35
+Region,West Midlands,770,2020-09-04,36
+Region,West Midlands,1021,2020-09-11,37
 Region,East,1162,2020-01-03,1
 Region,East,1573,2020-01-10,2
 Region,East,1457,2020-01-17,3
@@ -21322,6 +21464,8 @@ Region,East,955,2020-08-07,32
 Region,East,1006,2020-08-14,33
 Region,East,1024,2020-08-21,34
 Region,East,951,2020-08-28,35
+Region,East,806,2020-09-04,36
+Region,East,1052,2020-09-11,37
 Region,London,1113,2020-01-03,1
 Region,London,1272,2020-01-10,2
 Region,London,1073,2020-01-17,3
@@ -21357,6 +21501,8 @@ Region,London,832,2020-08-07,32
 Region,London,928,2020-08-14,33
 Region,London,920,2020-08-21,34
 Region,London,810,2020-08-28,35
+Region,London,737,2020-09-04,36
+Region,London,898,2020-09-11,37
 Region,South East,1814,2020-01-03,1
 Region,South East,2132,2020-01-10,2
 Region,South East,2064,2020-01-17,3
@@ -21392,6 +21538,8 @@ Region,South East,1370,2020-08-07,32
 Region,South East,1395,2020-08-14,33
 Region,South East,1608,2020-08-21,34
 Region,South East,1511,2020-08-28,35
+Region,South East,1208,2020-09-04,36
+Region,South East,1610,2020-09-11,37
 Region,South West,1225,2020-01-03,1
 Region,South West,1487,2020-01-10,2
 Region,South West,1466,2020-01-17,3
@@ -21427,6 +21575,8 @@ Region,South West,929,2020-08-07,32
 Region,South West,1009,2020-08-14,33
 Region,South West,1043,2020-08-21,34
 Region,South West,959,2020-08-28,35
+Region,South West,803,2020-09-04,36
+Region,South West,1084,2020-09-11,37
 Region,Wales,787,2020-01-03,1
 Region,Wales,939,2020-01-10,2
 Region,Wales,767,2020-01-17,3
@@ -21462,3 +21612,5 @@ Region,Wales,563,2020-08-07,32
 Region,Wales,617,2020-08-14,33
 Region,Wales,594,2020-08-21,34
 Region,Wales,591,2020-08-28,35
+Region,Wales,488,2020-09-04,36
+Region,Wales,578,2020-09-11,37
