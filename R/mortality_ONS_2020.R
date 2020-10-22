@@ -15,6 +15,13 @@ library(rvest)
 #https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/datasets/weeklyprovisionalfiguresondeathsregisteredinenglandandwales
 
 # Download data -----------------------------------------------------------
+
+# Create folders if do not exist. Folders not pushed to GitHub.
+
+if(!dir.exists("spreadsheets/weekly")) {
+  dir.create("spreadsheets/weekly", recursive = T)
+}
+
 # 2020 Format changed to xlsx from xls
 
 # ext built from gist shared by rcatlord https://gist.github.com/rcatlord/1b44259e23bf8ef76bb54cc14d60d969
