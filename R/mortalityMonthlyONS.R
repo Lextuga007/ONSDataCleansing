@@ -12,6 +12,12 @@ library(tidyxl)
 
 #https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/datasets/weeklyprovisionalfiguresondeathsregisteredinenglandandwales
 
+# Create folders if do not exist. Folders not pushed to GitHub.
+
+if(!dir.exists("spreadsheets/monthly")) {
+  dir.create("spreadsheets/monthly", recursive = T)
+}
+
 
 # Download data -----------------------------------------------------------
 
@@ -202,10 +208,54 @@ return(x)
 }
 
 Mortality2006 <- formatFunction(`spreadsheets/monthly/Monthly2006Mortality-Figures for 2006.csv`)
+#1	Area Codes England and Wales were recoded in July 2007.
+#2	TOTAL REGISTRATIONS This may include records where the place of usual residence is missing. All sub divisions of Total Registrations exclude these.
+
+# Category regions are capitalised   filter(str_detect(category, "^[^[:lower:]]{2,}$"))
+# ends_with() UA - unitary authority (single tier, no districts or parishes)
+#  (Met County)	
+
+
 Mortality2007 <- formatFunction(`spreadsheets/monthly/Monthly2007Mortality-Figures for 2007.csv`)
 Mortality2008 <- formatFunction(`spreadsheets/monthly/Monthly2008Mortality-Figures for 2008.csv`)
 Mortality2009 <- formatFunction(`spreadsheets/monthly/Monthly2009Mortality-Figures for 2009.csv`)
 Mortality2010 <- formatFunction(`spreadsheets/monthly/Monthly2010Mortality-Figures for 2010.csv`)
+
+
+# Format data 2011 -  -----------------------------------------------------------
+
+formatFunction <- function(file){
+  
+  ONS <- `spreadsheets/monthly/Monthly2011Mortality-Figures for 2011.csv` %>%
+    clean_names %>%
+    rename_at(vars(starts_with("Monthly")), ~("codes")) %>% 
+    mutate(x2 = case_when(x2 == "Former districts of:" ~ NA_character_,
+                          TRUE ~ x2),
+           x2 = str_remove(x2, ","),
+           codes = coalesce(codes, x2)) %>% 
+    remove_empty(c("rows","cols")) %>% 
+    fill(codes, .direction = "down") %>% 
+    filter(!is.na(x4)) %>%  # remove footnotes as no value in x4
+    select(-x2) %>% 
+    select(codes, everything()) %>% 
+    mutate(codes = case_when(is.na(codes) ~ "category",
+                                TRUE ~ codes),
+           x3 = case_when(codes == "category" ~ "area_codes",
+                             TRUE ~ x3)) 
+   
+  # Push date row to column names
+  
+  onsFormattedJanitor <- row_to_names(ONS, 1)
+  
+  x <- onsFormattedJanitor %>%
+    pivot_longer(cols = -category:-area_codes,
+                 names_to = "dates",
+                 values_to = "counts")
+  
+  return(x)
+  
+}
+
 
 
 # # Bind together -----------------------------------------------------------
