@@ -203,10 +203,8 @@ Mortality2011 <- onsFormattedJanitor %>%
   pivot_longer(cols = -tier:-category,
                names_to = "dates",
                values_to = "counts") %>% 
-  left_join(areaCodes) %>% 
   select(tier,
          category,
-         area_codes,
          dates,
          counts)
 
@@ -281,6 +279,12 @@ areaCodes <- Mortality2006 %>%
   filter(!is.na(area_codes))
 
 
+# Mortality2011 -----------------------------------------------------------
+
+Mortality2011 <- Mortality2011 %>% 
+   left_join(areaCodes) 
+  
+
 # Format data 2012 - 2020 -----------------------------------------------------------
 # This was a cross over year with old and new Authority names in the spreadsheet
 
@@ -301,7 +305,11 @@ formatFunction <- function(file){
     rename(category = `Area of usual residence`) %>% 
     pivot_longer(cols = -category,
                  names_to = "dates",
-                 values_to = "counts")
+                 values_to = "counts") %>% 
+    left_join(tierLookup) %>% 
+    select(tier, 
+           everything())
+  
   
   return(x)
   
