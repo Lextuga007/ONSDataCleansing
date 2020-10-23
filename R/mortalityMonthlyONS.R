@@ -170,6 +170,56 @@ for(i in files_list_sheets) {
 }
 
 
+# Format data 2011 -----------------------------------------------------------
+# format out of date order as 2011 was unique in having old and new codes in the data. 
+# Use this to create the tier for the earlier and later years' data
+
+ONS <- `spreadsheets/monthly/Monthly2011Mortality-Figures for 2011.csv` %>%
+  clean_names %>%
+  rename_at(vars(starts_with("Monthly")), ~("codes")) %>% 
+  mutate(x2 = case_when(x2 == "Former districts of:" ~ NA_character_,
+                        TRUE ~ x2),
+         x2 = str_remove(x2, ","),
+         codes = coalesce(codes, x2),
+         # Remove the footnote numbers in category
+         codes = case_when(str_detect(codes, pattern = '[0-9]') ~ substr(codes, 1, str_locate(codes, pattern = '[0-9]') - 1),
+                           TRUE ~ codes)
+  ) %>% 
+  remove_empty(c("rows","cols")) %>% 
+  fill(codes, .direction = "down") %>% 
+  filter(!is.na(x4)) %>%  # remove footnotes as no value in x4
+  select(-x2) %>% 
+  select(codes, everything()) %>% 
+  mutate(codes = case_when(is.na(codes) ~ "tier",
+                           TRUE ~ codes),
+         x3 = case_when(codes == "tier" ~ "category",
+                        TRUE ~ x3)) 
+
+# Push date row to column names
+
+onsFormattedJanitor <- row_to_names(ONS, 1)
+
+Mortality2011 <- onsFormattedJanitor %>%
+  pivot_longer(cols = -tier:-category,
+               names_to = "dates",
+               values_to = "counts") %>% 
+  left_join(areaCodes) %>% 
+  select(tier,
+         category,
+         area_codes,
+         dates,
+         counts)
+
+
+# Tier lookup -------------------------------------------------------------
+
+tierLookup <- Mortality2011 %>% 
+  select(tier, 
+         category) %>% 
+  unique() %>% 
+  filter(!is.na(category))
+
+
 # Format data 2006 - 2010 -----------------------------------------------------------
 
 formatFunction <- function(file){
@@ -179,7 +229,6 @@ ONS <- file %>%
   remove_empty(c("rows","cols")) %>%
   rename_at(vars(starts_with("Monthly")), ~("codes")) %>%
   mutate(category = coalesce(x2, x3, x4),
-
          # Remove the footnote numbers in category
          category = case_when(str_detect(category, pattern = '[0-9]') ~ substr(category, 1, str_locate(category, pattern = '[0-9]') - 1),
                               TRUE ~ category)) %>%
@@ -192,8 +241,6 @@ ONS <- file %>%
          codes = case_when(str_detect(codes, "Area Codes") ~ "area_codes",
                            TRUE ~ codes))
 
-
-
   # Push date row to column names
 
   onsFormattedJanitor <- row_to_names(ONS, 1)
@@ -201,7 +248,10 @@ ONS <- file %>%
   x <- onsFormattedJanitor %>%
     pivot_longer(cols = -category:-area_codes,
                  names_to = "dates",
-                 values_to = "counts")
+                 values_to = "counts") %>% 
+    left_join(tierLookup) %>% 
+    select(tier, 
+           everything())
 
 return(x)
 
@@ -222,33 +272,34 @@ Mortality2009 <- formatFunction(`spreadsheets/monthly/Monthly2009Mortality-Figur
 Mortality2010 <- formatFunction(`spreadsheets/monthly/Monthly2010Mortality-Figures for 2010.csv`)
 
 
-# Format data 2011 -  -----------------------------------------------------------
+# Extract area codes ------------------------------------------------------
+
+areaCodes <- Mortality2006 %>% 
+  select(category,
+         area_codes) %>% 
+  unique() %>% 
+  filter(!is.na(area_codes))
+
+
+# Format data 2012 - 2020 -----------------------------------------------------------
+# This was a cross over year with old and new Authority names in the spreadsheet
 
 formatFunction <- function(file){
   
-  ONS <- `spreadsheets/monthly/Monthly2011Mortality-Figures for 2011.csv` %>%
+  ONS <- file %>%
     clean_names %>%
-    rename_at(vars(starts_with("Monthly")), ~("codes")) %>% 
-    mutate(x2 = case_when(x2 == "Former districts of:" ~ NA_character_,
-                          TRUE ~ x2),
-           x2 = str_remove(x2, ","),
-           codes = coalesce(codes, x2)) %>% 
+    mutate(contents = coalesce(contents, x2, x3)) %>%
     remove_empty(c("rows","cols")) %>% 
-    fill(codes, .direction = "down") %>% 
-    filter(!is.na(x4)) %>%  # remove footnotes as no value in x4
-    select(-x2) %>% 
-    select(codes, everything()) %>% 
-    mutate(codes = case_when(is.na(codes) ~ "category",
-                                TRUE ~ codes),
-           x3 = case_when(codes == "category" ~ "area_codes",
-                             TRUE ~ x3)) 
-   
+    select(-x2, -x3) %>% 
+    filter(!is.na(x4))    # remove footnotes as no value in x4
+  
   # Push date row to column names
   
   onsFormattedJanitor <- row_to_names(ONS, 1)
   
   x <- onsFormattedJanitor %>%
-    pivot_longer(cols = -category:-area_codes,
+    rename(category = `Area of usual residence`) %>% 
+    pivot_longer(cols = -category,
                  names_to = "dates",
                  values_to = "counts")
   
@@ -257,16 +308,27 @@ formatFunction <- function(file){
 }
 
 
+Mortality2012 <- formatFunction(`spreadsheets/monthly/Monthly2012Mortality-Figures for 2012.csv`)
+Mortality2013 <- formatFunction(`spreadsheets/monthly/Monthly2013Mortality-Figures for 2013.csv`)
+Mortality2014 <- formatFunction(`spreadsheets/monthly/Monthly2014Mortality-Figures for 2014.csv`)
+Mortality2015 <- formatFunction(`spreadsheets/monthly/Monthly2015Mortality-Figures for 2015.csv`)
+Mortality2016 <- formatFunction(`spreadsheets/monthly/Monthly2016Mortality-Figures for 2016.csv`)
+Mortality2017 <- formatFunction(`spreadsheets/monthly/Monthly2017Mortality-Figures for 2017.csv`)
+Mortality2018 <- formatFunction(`spreadsheets/monthly/Monthly2018Mortality-Figures for 2018.csv`)
+Mortality2019 <- formatFunction(`spreadsheets/monthly/Monthly2019Mortality-Figures for 2019.csv`)
+Mortality2020 <- formatFunction(`spreadsheets/monthly/Monthly2020Mortality-Figures for 2020.csv`)
 
-# # Bind together -----------------------------------------------------------
-# 
-# ons_mortality_monthly <- do.call("rbind", list(
-#   Mortality2006,
-#   Mortality2007,
-#   Mortality2008,
-#   Mortality2009,
-#   Mortality2010,
-#   Mortality2011,
+
+# Bind together -----------------------------------------------------------
+
+ons_mortality_monthly <- do.call("rbind", list(
+  Mortality2006,
+  Mortality2007,
+  Mortality2008,
+  Mortality2009,
+  Mortality2010,
+  Mortality2011))
+
 #   Mortality2012,
 #   Mortality2013,
 #   Mortality2014,
