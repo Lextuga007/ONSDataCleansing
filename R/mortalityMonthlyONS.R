@@ -292,7 +292,9 @@ formatFunction <- function(file){
   
   ONS <- file %>%
     clean_names %>%
-    mutate(contents = coalesce(contents, x2, x3)) %>%
+    mutate(contents = coalesce(contents, x2, x3),
+           contents = case_when(str_detect(contents, pattern = '[0-9]') ~ substr(contents, 1, str_locate(contents, pattern = '[0-9]') - 1),
+                                TRUE ~ contents)) %>%
     remove_empty(c("rows","cols")) %>% 
     select(-x2, -x3) %>% 
     filter(!is.na(x4))    # remove footnotes as no value in x4
@@ -329,25 +331,22 @@ Mortality2020 <- formatFunction(`spreadsheets/monthly/Monthly2020Mortality-Figur
 
 # Bind together -----------------------------------------------------------
 
-ons_mortality_monthly <- do.call("rbind", list(
-  Mortality2006,
-  Mortality2007,
-  Mortality2008,
-  Mortality2009,
-  Mortality2010,
-  Mortality2011))
+ons_mortality_monthly <- Mortality2006 %>% 
+  union_all(Mortality2007) %>% 
+  union_all(Mortality2008) %>% 
+  union_all(Mortality2009) %>% 
+  union_all(Mortality2010) %>% 
+  union_all(Mortality2011) %>% 
+  union_all(Mortality2012) %>% 
+  union_all(Mortality2013) %>% 
+  union_all(Mortality2014) %>% 
+  union_all(Mortality2015) %>% 
+  union_all(Mortality2016) %>% 
+  union_all(Mortality2017) %>% 
+  union_all(Mortality2018) %>% 
+  union_all(Mortality2019) %>% 
+  union_all(Mortality2020) 
 
-#   Mortality2012,
-#   Mortality2013,
-#   Mortality2014,
-#   Mortality2015,
-#   Mortality2016,
-#   Mortality2017,
-#   Mortality2018,
-#   Mortality2019,
-#   Mortality2020))
-# 
-# 
 #   # Save as rda file
 # 
 #   save(ons_mortality_monthly, file = "data/ons_mortality_monthly.rda")
