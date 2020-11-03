@@ -2,6 +2,7 @@ library(readxl)
 library(janitor)
 library(tidyverse)
 library(stringi)
+library(stringr)
 library(lubridate)
 library(tidyxl)
 
@@ -181,15 +182,13 @@ ONS <- `spreadsheets/monthly/Monthly2011Mortality-Figures for 2011.csv` %>%
                         TRUE ~ x2),
          x2 = str_remove(x2, ","),
          codes = coalesce(codes, x2),
-         # Remove the footnote numbers in category
-         codes = case_when(str_detect(codes, pattern = '[0-9]') ~ substr(codes, 1, str_locate(codes, pattern = '[0-9]') - 1),
-                           TRUE ~ codes)
+         codes = str_remove(codes, '[0-9]') # Remove the footnote numbers in category
   ) %>% 
   remove_empty(c("rows","cols")) %>% 
   fill(codes, .direction = "down") %>% 
   filter(!is.na(x4)) %>%  # remove footnotes as no value in x4
   select(-x2) %>% 
-  select(codes, everything()) %>% 
+  select(codes, everything()) %>%
   mutate(codes = case_when(is.na(codes) ~ "tier",
                            TRUE ~ codes),
          x3 = case_when(codes == "tier" ~ "category",
@@ -227,9 +226,9 @@ ONS <- file %>%
   remove_empty(c("rows","cols")) %>%
   rename_at(vars(starts_with("Monthly")), ~("codes")) %>%
   mutate(category = coalesce(x2, x3, x4),
-         # Remove the footnote numbers in category
-         category = case_when(str_detect(category, pattern = '[0-9]') ~ substr(category, 1, str_locate(category, pattern = '[0-9]') - 1),
-                              TRUE ~ category)) %>%
+         category = str_remove(category, '[0-9].*'), # Remove the footnote numbers in category
+         x3 = str_remove(x3, '[0-9].*'),
+         category = str_squish(category)) %>% # TOTAL REGISTRATIONS has trailing whitespace at end
   select(category, everything()) %>%
   filter(!codes %in% c('Footnotes:',
                           '1')) %>%
@@ -254,6 +253,7 @@ ONS <- file %>%
 return(x)
 
 }
+
 
 Mortality2006 <- formatFunction(`spreadsheets/monthly/Monthly2006Mortality-Figures for 2006.csv`)
 #1	Area Codes England and Wales were recoded in July 2007.
@@ -290,11 +290,12 @@ Mortality2011 <- Mortality2011 %>%
 
 formatFunction <- function(file){
   
-  ONS <- file %>%
+  ONS <- `spreadsheets/monthly/Monthly2015Mortality-Figures for 2015.csv` %>%
     clean_names %>%
     mutate(contents = coalesce(contents, x2, x3),
-           contents = case_when(str_detect(contents, pattern = '[0-9]') ~ substr(contents, 1, str_locate(contents, pattern = '[0-9]') - 1),
-                                TRUE ~ contents)) %>%
+           x2 = str_remove(x2, '[0-9].*'),
+           contents = str_remove(contents, '[0-9].*') # Remove the footnote numbers 
+           ) %>% 
     remove_empty(c("rows","cols")) %>% 
     select(-x2, -x3) %>% 
     filter(!is.na(x4))    # remove footnotes as no value in x4
@@ -309,6 +310,7 @@ formatFunction <- function(file){
                  names_to = "dates",
                  values_to = "counts") %>% 
     left_join(tierLookup) %>% 
+    left_join(areaCodes) %>% 
     select(tier, 
            everything())
   
@@ -345,7 +347,35 @@ ons_mortality_monthly <- Mortality2006 %>%
   union_all(Mortality2017) %>% 
   union_all(Mortality2018) %>% 
   union_all(Mortality2019) %>% 
-  union_all(Mortality2020) 
+  union_all(Mortality2020) %>% 
+  mutate(category = str_squish(category)) # Bedford was duplicated due to trailing spaces
+
+# Format case and differentiate between areas -----------------------------
+
+# Bedford was a district 09UD 2006-2011 now a UA 00KB
+# Welsh name in new column
+# ... comprises
+
+ons_mortality <- ons_mortality_monthly %>% 
+  select(category) %>%
+  # filter(str_detect(category, 'Cornwall')) %>%
+  unique() %>%
+  mutate(type = case_when(category %in% c('ENGLAND AND WALES',
+                                          'ENGLAND',
+                                          'WALES',
+                                          'ENGLAND, WALES AND ELSEWHERE') ~ 'Country',
+                          category %in% c('TOTAL REGISTRATIONS') ~ 'Total',
+                          str_detect(category, "^[^[:lower:]]{2,}$") ~ 'County',
+                          str_detect(category, 'UA') ~ 'Unitary Authority',
+                          str_detect(category, '(Met County)') ~ 'Metropolitan county',
+                                          TRUE ~ 'District'),
+         category = case_when(str_detect(category, "^[^[:lower:]]{2,}$") ~ str_to_title(category),
+                              TRUE ~ category),
+         category = str_remove(category, ' UA'),
+         category = str_remove(category, ' [(]Met County[)]'),
+         category = str_replace(category, 'And', 'and'),
+         category = str_remove(category, ', City of')
+  )
 
 #   # Save as rda file
 # 
