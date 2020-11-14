@@ -213,3 +213,4 @@ save(ons_mortality, file = "data/ons_mortality_2020.rda")
 # Save as a csv file
 
 write_csv(ons_mortality, "data/ons_mortality_2020.csv")
+
